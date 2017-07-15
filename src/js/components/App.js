@@ -104,10 +104,10 @@ export default class App extends Component {
 				<main>
 					<div className="container">
 						<div className="row main-row">
-							<div className="col-lg-3">
+							<div className="col-sm-12 col-md-3 col-lg-3">
 								<Filter data={this.filterFields} filterStr={this.state.filterStr} filterUpdate={this.filterUpdate.bind(this)} />
 							</div>
-							<div className="col-lg-9">
+							<div className="col-sm-12 col-md-9 col-lg-9">
 								<div className="block-table">
 									<table>
 										<thead>
