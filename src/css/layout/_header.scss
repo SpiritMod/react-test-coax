@@ -1,0 +1,17 @@
+header {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  margin: 0 0;
+  min-height: 54px;
+  background: #151515;
+  z-index: 25;
+  @media #{$small-only} {
+    min-height: 50px;
+  }
+  .l-header {
+
+  }
+}
+

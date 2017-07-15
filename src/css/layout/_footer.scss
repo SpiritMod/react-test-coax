@@ -1,0 +1,12 @@
+footer {
+  background: transparent;
+  min-height: 228px;
+  padding: 28px 0;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+  .l-footer {
+    padding: 15px 0 0;
+    border-top: 1px solid rgba(#686868, 0.5);
+  }
+}

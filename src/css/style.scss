@@ -1,0 +1,27 @@
+//Created by Spirit
+//Author: Alexander Kharchuk
+//skype: spirit-c4
+//e-mail: sashko.harchuk@gmail.com
+//site: http://front-end.if.ua/
+
+//font
+//@import "partials/fonts";
+//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext');
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/layout";
+@import "partials/helpers";
+
+//icomoon
+//@import "partials/icomoon";
+
+@import "layout/main";
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/stars";
+
+@import "components/blocks/block-filter";
+@import "components/blocks/block-table";

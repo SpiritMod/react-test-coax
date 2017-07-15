@@ -1,0 +1,211 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  height: 33px;
+  width: auto;
+  min-width: 142px;
+  padding: 0 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  outline: none!important;
+  margin: 0;
+  background: transparent;
+  border: 1px solid $orange;
+  border-radius: 0;
+  transition: all 0.1s ease 0s;
+  @extend %vertical;
+  .help {
+    color: $orange;
+    font-family: $default;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 0;
+  }
+  &:hover, &:active, &:focus {
+    background: $orange;
+    .help {
+      color: #fff!important;
+    }
+  }
+  &:visited {
+    .help {
+      color: #fff;
+    }
+  }
+
+  &.text-orange {
+    background: #fff;
+    &:hover, &:active, &:focus {
+      background: $orange;
+    }
+    .help {
+      color: $orange;
+    }
+  }
+  &.text-upper {
+    .help {
+      text-transform: uppercase;
+    }
+  }
+  &.icon-left {
+    .help {
+      position: relative;
+      padding-left: 20px;
+      [class*=" icon-"], [class^=icon-] {
+        display: block;
+        position: absolute;
+        @include center(y);
+        left: 0;
+      }
+    }
+  }
+  &.icon-right {
+    .help {
+      position: relative;
+      padding: 0 20px 0 0;
+      [class*=" icon-"], [class^=icon-] {
+        display: block;
+        position: absolute;
+        @include center(y);
+        right: 0;
+      }
+    }
+  }
+  &.large {
+    height: 40px;
+  }
+  &.small-x {
+    height: 42px;
+  }
+  &.disable {
+    color: grey;
+    border-color: grey;
+    background: #fff;
+    &:hover, &:active, &:focus {
+      color: grey;
+      border-color: grey;
+      background: #fff;
+      .help {
+        color: grey!important;
+      }
+    }
+    &:visited {
+      .help {
+        color: grey!important;
+      }
+    }
+    .help {
+      color: grey;
+    }
+  }
+}
+
+button {
+  &.btn {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    border-radius: 3px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &.btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+    height: 40px;
+    width: auto;
+    min-width: 140px;
+    padding: 0 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    outline: none!important;
+    margin: 0;
+    background: #3498db;
+    border-radius: 3px;
+    transition: all 0.1s ease 0s;
+    @extend %vertical;
+    &:before {
+      background: darken(#3498db,10%);
+    }
+    &:hover {
+      background: #3498db;
+    }
+    .help {
+      color: #fff;
+      font-family: $default;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.2pt;
+    }
+  }
+  &.btn-green {
+    background: #69cd72;
+    &:hover {
+      background: #69cd72;
+    }
+    &:before {
+      background: darken(#69cd72,10%);
+    }
+  }
+}
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+  color: white;
+}
+.hvr-bounce-to-right:hover:before,
+.hvr-bounce-to-right:focus:before,
+.hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}

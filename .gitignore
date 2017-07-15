@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.sass_cache
+bower_component
+.idea
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+node_modules/
+npm-debug.log
+yarn.lock
+*.css.map

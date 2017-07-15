@@ -1,0 +1,35 @@
+.field-rating {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px 0 0 0;
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    margin: 0 1px;
+    .fa-star-o,
+    .fa-star {
+      font-size: 18px;
+    }
+  }
+}
+
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+.icon-text {
+  display: inline-block;
+  width: 26px;
+  font-size: 2em;
+  background-color: white;
+}
+.icon-star-empty {
+  color: #ffa345;
+}
+
+.orange {
+  color: #ffa345;
+}

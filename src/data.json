@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 5",
+    "price": "$240",
+    "rating": 5,
+    "type": "Mobile"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S5",
+    "price": "$300",
+    "rating": 3.4,
+    "type": "Mobile"
+  },
+  {
+    "id": 3,
+    "name": "Nokia Lumia 1320",
+    "price": "$130",
+    "rating": 2.5,
+    "type": "Mobile"
+  },
+  {
+    "id": 4,
+    "name": "Lenovo G50-4",
+    "price": "$230",
+    "rating": 3.5,
+    "type": "Laptop"
+  },
+  {
+    "id": 5,
+    "name": "Lenovo G71",
+    "price": "$185",
+    "rating": 3.5,
+    "type": "Laptop"
+  },
+  {
+    "id": 6,
+    "name": "Apple MacBook Pro 13 Early 2012",
+    "price": "$700",
+    "rating": 4.5,
+    "type": "Laptop"
+  },
+  {
+    "id": 7,
+    "name": "Apple MacBook Pro 15 Early 2012",
+    "price": "$1200",
+    "rating": 4.0,
+    "type": "Laptop"
+  },
+  {
+    "id": 8,
+    "name": "Apple iPad A1822 Wi-Fi 32GB",
+    "price": "$400",
+    "rating": 5.0,
+    "type": "Tablet"
+  },
+  {
+    "id": 9,
+    "name": "Apple iPad A1823 Wi-Fi 4G 32GB",
+    "price": "$600",
+    "rating": 3.0,
+    "type": "Tablet"
+  },
+  {
+    "id": 10,
+    "name": "Lenovo Tab 2 X30L",
+    "price": "$200",
+    "rating": 4.5,
+    "type": "Tablet"
+  },
+  {
+    "id": 11,
+    "name": "Samsung Galaxy Tab A 10.1",
+    "price": "$300",
+    "rating": 3.6,
+    "type": "Tablet"
+  },
+  {
+    "id": 12,
+    "name": "Z1",
+    "price": "$10",
+    "rating": 1,
+    "type": "ZzZ"
+  },
+  {
+    "id": 13,
+    "name": "Z2",
+    "price": "$20",
+    "rating": 2,
+    "type": "ZzZ"
+  },
+  {
+    "id": 14,
+    "name": "Z3",
+    "price": "$30",
+    "rating": 3,
+    "type": "ZzZ"
+  }
+]

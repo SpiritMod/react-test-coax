@@ -1,0 +1,51 @@
+{
+  "name": "reactSortable",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "./js/bundle/bundle.js",
+  "scripts": {
+    "dev": "webpack --progress --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Spirit",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.31.1",
+    "react-dom": "^15.3.2",
+    "react-rating": "^0.8.0",
+    "react-star-ratings": "^1.0.20",
+    "react-stars": "^2.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.12.2",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "file-loader": "^0.8.5",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.1.1",
+    "postcss-loader": "^0.13.0",
+    "postcss-modules": "^0.5.2",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.25"
+  }
+}

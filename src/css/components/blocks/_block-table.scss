@@ -1,0 +1,93 @@
+.block-table {
+  table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #586980;
+    border-radius: 5px;
+    width: 100%;
+    thead {
+      tr {
+        &:first-child {
+          background: #455568;
+          color: #fff;
+          border: none;
+        }
+        th {
+          text-align: center;
+          padding: 18px 20px;
+          border-bottom: none!important;
+          border-right: 1px solid #586980;
+          position: relative;
+          &:first-child {
+            border-radius: 4px 0 0 0;
+            text-align: left;
+          }
+          &:nth-child(2) {
+            width: 150px;
+          }
+          &:last-child {
+            border-radius: 0 4px 0 0;
+            border-right: none;
+            width: 150px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          border-right: 1px solid #586980;
+          font-size: 15px;
+          color: rgba(#455568,0.8);
+          &:last-child {
+            border-right: none;
+          }
+        }
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    td {
+      text-align: center;
+      padding: 13px 20px;
+      vertical-align: middle;
+      border-top: none!important;
+      border-bottom: 1px solid #586980;
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+  .is--asc:after {
+    content: "\e113";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    margin-left: 6px;
+    font-size: 10px;
+    @include center(y);
+  }
+  .is--desc:after {
+    content: "\e114";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: absolute;
+    margin-left: 6px;
+    font-size: 10px;
+    @include center(y);
+  }
+}
+
+
+

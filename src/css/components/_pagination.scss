@@ -1,0 +1,131 @@
+ul.pagination {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0;
+  font-size: 0;
+  text-align: center;
+  width: 100%;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    color: #1f373f;
+    float: none;
+    margin: 0 3px;
+    @media #{$small-only} {
+      margin: 0 1px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      color: #666;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      border: 1px solid transparent;
+      text-align: center;
+      margin: 0 0;
+      padding: 0 0;
+      text-decoration: none;
+      transition: all 0.1s ease 0s;
+      @media #{$small-only} {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 28px;
+      }
+      &:hover {
+        border-color: #ff8b00;
+        background: #fafdff;
+        box-shadow: 0 6px 7px rgba(248, 137, 4, 0.35);
+      }
+    }
+    &.unavailable {
+      &:hover {
+        a {
+          color: #666;
+        }
+      }
+      a {
+        pointer-events: none;
+        color: #666;
+        text-decoration: none;
+      }
+    }
+    &.current {
+      a {
+        color: #fff;
+        text-decoration: none;
+        background-color: #ff8b00;
+        border-color: #ff8b00;
+        &.hover, &:focus {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    &.arrow {
+      &.unavailable {
+        a {
+          color: #e6e6e6;
+          text-decoration: none;
+          background: transparent!important;
+          &:hover, &:focus {
+            color: #e6e6e6;
+          }
+        }
+      }
+      a {
+        width: 32px;
+        height: 32px;
+        font-size: 0;
+        text-decoration: none;
+        @extend %vertical;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.1s ease 0s;
+        border-color: #ff8b00;
+        background: #fafdff;
+        @media #{$small-only} {
+          width: 30px;
+          height: 30px;
+        }
+        &:hover, &:focus {
+          border-color: #ff8b00;
+          background: #ff8b00;
+          box-shadow: none;
+          color: #fff;
+        }
+        > span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 11px;
+          line-height: 1;
+        }
+      }
+    }
+    &:last-child {
+      a {
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+}
+
+.box-pagination {
+  text-align: center;
+  padding: 24px 0;
+  @media #{$small-only} {
+    margin: 0 -10px;
+  }
+}
